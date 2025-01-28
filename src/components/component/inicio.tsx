@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import Image from 'next/image'; 
 
 export function Inicio() {
   return (
@@ -8,17 +9,17 @@ export function Inicio() {
         <div className="pt-19 px-4 md:px-8 flex flex-col space-y-6 md:flex-row items-center animate-fadeIn">
           <div className="md:w-1/2 space-y-6 md:mr-8">
             <div className="flex flex-col items-center">
-              <div className="w-32 h-32 rounded-full overflow-hidden shadow-lg animate-bounceIn">
-                <img
-                  alt="Profile Picture"
+              <div className="w-61 h-61 rounded-full overflow-hidden shadow-lg animate-bounceIn">
+                <Image
+                  alt=""
+                  src="/images/ricardo.jpg"
                   className="object-cover"
-                  height={128}
-                  src="/placeholder.svg"
+                  height={528}
+                  width={528}
                   style={{
-                    aspectRatio: "128/128",
+                    aspectRatio: "150/150",
                     objectFit: "cover",
                   }}
-                  width={128}
                 />
               </div>
             </div>
@@ -29,7 +30,7 @@ export function Inicio() {
                 Ricardo Gonzalez Mendez
               </h1>
               <span className="text-[#ffffff] animate-fadeInUp mb-3">
-                Software Engineer
+                Information And Communication Technology Engineer
               </span>
               <div className="flex justify-start space-x-4 animate-fadeInUp py-2">
                 <Link href="https://github.com/ricardoGonzaM" target="_blank">

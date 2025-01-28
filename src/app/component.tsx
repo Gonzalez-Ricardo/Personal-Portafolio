@@ -1,8 +1,4 @@
-/**
- * v0 by Vercel.
- * @see https://v0.dev/t/g07nXqbcsEz
- * Documentation: https://v0.dev/docs#integrating-generated-code-into-your-nextjs-app
- */
+
 import { Sheet, SheetTrigger, SheetContent } from "@/components/ui/sheet"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
@@ -14,13 +10,13 @@ export default function Component() {
       <Sheet>
         <SheetTrigger asChild>
           <Button variant="outline" size="icon" className="lg:hidden">
-            <MenuIcon className="h-6 w-6" />
+            <MenuIcon />
             <span className="sr-only">Toggle navigation menu</span>
           </Button>
         </SheetTrigger>
         <SheetContent side="left">
           <Link href="#" className="flex items-center gap-2" prefetch={false}>
-            <BoltIcon className="h-6 w-6" />
+            <BoltIcon  />
             <span className="sr-only">Cyberpunk Inc</span>
           </Link>
           <div className="grid gap-2 py-6">
@@ -57,7 +53,7 @@ export default function Component() {
       </Sheet>
       <div className="w-[150px]">
         <Link href="#" className="mr-6 hidden lg:flex items-center gap-2" prefetch={false}>
-          <BoltIcon className="h-6 w-6" />
+          <BoltIcon  />
           <span className="sr-only">Cyberpunk Inc</span>
         </Link>
       </div>
@@ -76,7 +72,7 @@ export default function Component() {
             <NavigationMenuItem>
               <NavigationMenuTrigger className="group inline-flex h-9 w-max items-center justify-center rounded-lg bg-[#00ffff]/10 px-4 py-2 text-sm font-medium transition-colors hover:bg-[#00ffff]/20 hover:text-[#00ffff] focus:bg-[#00ffff]/20 focus:text-[#00ffff] focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-[#00ffff]/30 data-[state=open]:bg-[#00ffff]/30">
                 Features
-                <ChevronDownIcon className="ml-2 h-4 w-4 transition-transform [&[data-state=open]]:rotate-180" />
+                <ChevronDownIcon  />
               </NavigationMenuTrigger>
               <NavigationMenuContent>
                 <div className="grid w-[400px] p-2">
@@ -156,7 +152,7 @@ export default function Component() {
       </div>
       <div className="ml-auto w-[150px] flex justify-end">
         <Link href="#" className="flex items-center gap-2" prefetch={false}>
-          <BoltIcon className="h-6 w-6" />
+          <BoltIcon />
           <span className="text-[#00ffff] font-semibold">Cyberpunk Inc</span>
         </Link>
       </div>
@@ -164,10 +160,9 @@ export default function Component() {
   )
 }
 
-function BoltIcon(props) {
+function BoltIcon() {
   return (
     <svg
-      {...props}
       xmlns="http://www.w3.org/2000/svg"
       width="24"
       height="24"
@@ -185,10 +180,9 @@ function BoltIcon(props) {
 }
 
 
-function ChevronDownIcon(props) {
+function ChevronDownIcon() {
   return (
     <svg
-      {...props}
       xmlns="http://www.w3.org/2000/svg"
       width="24"
       height="24"
@@ -205,10 +199,9 @@ function ChevronDownIcon(props) {
 }
 
 
-function MenuIcon(props) {
+function MenuIcon() {
   return (
     <svg
-      {...props}
       xmlns="http://www.w3.org/2000/svg"
       width="24"
       height="24"

@@ -4,10 +4,8 @@ const projects = [
   {
     title: "Electronics Ecommerce",
     description: [
-      "- Designed and developed a full-stack e-commerce platform, incorporating modular architecture, responsive design, and intuitive navigation for a seamless and engaging user experience.",
-      <br />,
-      <br />,
-      "- Implemented backend server, adept in CRUD operations with a focus on secure, scalable, and optimized database interactions.",
+      "Designed and developed a full-stack e-commerce platform, incorporating modular architecture, responsive design, and intuitive navigation for a seamless and engaging user experience.",
+      "Implemented backend server, adept in CRUD operations with a focus on secure, scalable, and optimized database interactions.",
     ],
     technologies: ["React", "TypeScript", "PHP", "MySql", "CSS"],
     link: "",
@@ -15,10 +13,8 @@ const projects = [
   {
     title: "Investment Calculator",
     description: [
-      "- Developed and launched a financial tool for investment advisors, integrating key metrics such as Return on Investment (ROI), Net Present Value (NPV), Internal Rate of Return (IRR), and among others to maximize investment value.",
-      <br />,
-      <br />,
-      "- Designed and developed a task management application, incorporating modular architecture, responsive design and intuitive navigation for a fluid and engaging user experience.",
+      "Developed and launched a financial tool for investment advisors, integrating key metrics such as Return on Investment (ROI), Net Present Value (NPV), Internal Rate of Return (IRR), and among others to maximize investment value.",
+      "Designed and developed a task management application, incorporating modular architecture, responsive design and intuitive navigation for a fluid and engaging user experience.",
     ],
     technologies: ["JavaScript", "HTML", "CSS"],
     link: "#",
@@ -26,10 +22,8 @@ const projects = [
   {
     title: "Error Management System And Download",
     description: [
-      "- This project aims to develop a centralized platform to improve the organization, visualization and maintenance of manuals and executables, as well as to record and manage errors in different modules.",
-      <br />,
-      <br />,
-      "- Through an intuitive web system, users will be able to easily access the necessary content and manage incidents with multimedia support.",
+      "This project aims to develop a centralized platform to improve the organization, visualization and maintenance of manuals and executables, as well as to record and manage errors in different modules.",
+      "Through an intuitive web system, users will be able to easily access the necessary content and manage incidents with multimedia support.",
     ],
     technologies: ["Laravel", "Vue", "PHP", "MySql", "CSS"],
     link: "#",
@@ -47,7 +41,6 @@ const projects = [
 export default function Projects() {
   return (
     <section id="projects" className="md:px-10 px-4 py-12 md:py-10 lg:py-10">
-      <br />
       <h2 className="text-3xl text-[#c4c8c7] font-bold tracking-tighter md:text-4xl mb-8">
         Proyectos Destacados
       </h2>
@@ -75,17 +68,19 @@ export default function Projects() {
                 </span>
               ))}
             </div>
-            <div className="flex items-center justify-center">
-              <a
-                href={project.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label={`View details for ${project.title}`}
-                className="bg-[rgba(17,25,40,0.5)] border border-[#465866] text-white py-2 px-4 rounded"
-              >
-                View Project
-              </a>
-            </div>
+            {project.link && (
+              <div className="flex items-center justify-center">
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`View details for ${project.title}`}
+                  className="bg-[rgba(17,25,40,0.5)] border border-[#465866] text-white py-2 px-4 rounded"
+                >
+                  View Project
+                </a>
+              </div>
+            )}
           </Card>
         ))}
       </div>
