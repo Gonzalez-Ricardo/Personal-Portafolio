@@ -1,4 +1,5 @@
 {
+  "homepage": "https://ricardogonzam.github.io/Personal-Portafolio/",
   "name": "portafolio-ricardo2.0",
   "version": "0.1.0",
   "private": true,
@@ -6,7 +7,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "predeploy": "npm run dev",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@nextui-org/card": "^2.2.8",
