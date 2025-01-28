@@ -9,7 +9,7 @@
     "start": "next start",
     "lint": "next lint",
     "predeploy": "npm run dev",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build" 
   },
   "dependencies": {
     "@nextui-org/card": "^2.2.8",
