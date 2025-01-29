@@ -14,7 +14,7 @@ export function Inicio() {
                   alt=""
                   src="/images/ricardo.jpg"
                   className="object-cover"
-                  height={528}
+                  height={528} 
                   width={528}
                   style={{
                     aspectRatio: "150/150",
