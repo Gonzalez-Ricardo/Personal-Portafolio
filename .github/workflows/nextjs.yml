@@ -1,3 +1,4 @@
+- Ensure your workflow file `.
 name: Deploy Next.js site to Pages
 
 on:
@@ -14,9 +15,9 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Set up Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@vgithub/workflows/nextjs.yml` includes the correct2
         with:
-          node-version: "18.17.0" # Ensure you are using a compatible Node.js version
+          node-version: '18.17.0'  # Ensure you are using a compatible Node.js version
 
       - name: Install dependencies
         run: npm install
@@ -28,4 +29,33 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./out
+          permissions and steps.
+
+Here is an updated version of publish_dir: ./out
+          publish_branch your workflow configuration:
+
+```yaml
+name: Deploy Next: gh-pages  # Specify the branch to push to
+``.js site to Pages
+
+on:
+  push:
+    branches:
+      -`
+
+3. **Check repository settings**:
+   - Go to the repository settings and ensure that the `GITHUB_TOKEN main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest` has write access to the repository.
+
+Update your repository and push the changes.
+
+    steps:
+      - name: Checkout code
+        uses This should resolve the issue with the failing job.: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
