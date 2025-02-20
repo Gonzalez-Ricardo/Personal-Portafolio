@@ -50,6 +50,14 @@ jobs:
         with:
           static_site_generator: next
 
+          - name: Cache dependencies
+  uses: actions/cache@v3
+  with:
+    path: .next/cache
+    key: ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}
+    restore-keys: |
+      ${{ runner.os }}-nextjs-
+
       - name: Restore cache
         uses: actions/cache@v3
         with:
