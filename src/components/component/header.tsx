@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { Moon, Sun, Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -23,7 +24,18 @@ export default function Header() {
       <div className="container flex h-14 max-w-screen-2xl items-center">
         <div className="mr-4 flex">
           <a className="mr-6 flex items-center space-x-2" href="/">
-            <span className="font-bold sm:inline-block">MiPortafolio</span>
+            <Image
+              alt=""
+              src="/images/Logo1.png"
+              className="object-cover"
+              height={40}
+              width={40}
+              style={{
+                aspectRatio: "150/150",
+                objectFit: "cover",
+                borderRadius: "20%",
+              }}
+            />
           </a>
           <nav className="flex items-center space-x-6 text-sm font-medium">
             <div className="hidden space-x-6 md:block">
@@ -62,7 +74,10 @@ export default function Header() {
                 <span className="sr-only">Abrir menú</span>
               </Button>
             </DropdownMenuTrigger>
-            <DropdownMenuContent className="bg-[#0f1d29] text-[#ffff]" align="end">
+            <DropdownMenuContent
+              className="bg-[#0f1d29] text-[#ffff]"
+              align="end"
+            >
               <DropdownMenuItem asChild>
                 <a href="#inicio">inicio</a>
               </DropdownMenuItem>

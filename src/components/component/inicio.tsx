@@ -38,7 +38,7 @@ export function Inicio() {
                     <GithubIcon />
                   </Button>
                 </Link>
-                <Link href="#" target="_blank">
+                <Link href="https://www.linkedin.com/in/ricardo-gonzalez-mendez-2056b7262/" target="_blank">
                   <Button className="rounded-full" size="icon" variant="ghost">
                     <LinkedinIcon />
                   </Button>

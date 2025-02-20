@@ -412,7 +412,7 @@ export function GlobeDemo() {
           className="div"
         >
           <h2 className="text-center text-xl md:text-4xl font-bold text-[#ffffff] dark:text-black">
-            We sell soap worldwide
+            Connecting The World Through Innovation And Technology.
           </h2>
         </motion.div>
         <div className="absolute w-full bottom-0 inset-x-0 h-40 bg-gradient-to-b pointer-events-none select-none from-transparent dark:to-black z-40" />

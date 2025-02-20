@@ -9,18 +9,14 @@ export default function Footer() {
             © 2025 Ricardo Gonzalez Mendez ❤️. All rights reserved, and may the force be with you.
           </p>
         </div>
-        <div className="flex gap-4">
-          <a href="#" target="_blank" rel="noreferrer">
+        <div className="flex gap-4 px-8">
+          <a href="https://github.com/ricardoGonzaM" target="_blank" rel="noreferrer">
             <Github className="h-5 w-5" />
-            <span className="sr-only">GitHub</span>
+            <span className="sr-only">GitHub</span> 
           </a>
-          <a href="#" target="_blank" rel="noreferrer">
+          <a href="https://www.linkedin.com/in/ricardo-gonzalez-mendez-2056b7262/" target="_blank" rel="noreferrer">
             <Linkedin className="h-5 w-5" />
             <span className="sr-only">LinkedIn</span>
-          </a>
-          <a href="#" target="_blank" rel="noreferrer">
-            <Twitter className="h-5 w-5" />
-            <span className="sr-only">Twitter</span>
           </a>
         </div>
       </div>

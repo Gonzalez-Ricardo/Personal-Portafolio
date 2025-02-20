@@ -1,8 +1,10 @@
 import { Card, CardDescription, CardTitle } from "@/components/ui/card";
+import Image from 'next/image'; 
 
 const projects = [
   {
     title: "Electronics Ecommerce",
+    imageUrl: "/images/Ecommerce.png",
     description: [
       "Designed and developed a full-stack e-commerce platform, incorporating modular architecture, responsive design, and intuitive navigation for a seamless and engaging user experience.",
       "Implemented backend server, adept in CRUD operations with a focus on secure, scalable, and optimized database interactions.",
@@ -12,24 +14,26 @@ const projects = [
   },
   {
     title: "Investment Calculator",
+    imageUrl: "/images/ofx.png",
     description: [
       "Developed and launched a financial tool for investment advisors, integrating key metrics such as Return on Investment (ROI), Net Present Value (NPV), Internal Rate of Return (IRR), and among others to maximize investment value.",
       "Designed and developed a task management application, incorporating modular architecture, responsive design and intuitive navigation for a fluid and engaging user experience.",
     ],
     technologies: ["JavaScript", "HTML", "CSS"],
-    link: "#",
   },
   {
     title: "Error Management System And Download",
+    imageUrl: "/images/GIRO.png",
     description: [
       "This project aims to develop a centralized platform to improve the organization, visualization and maintenance of manuals and executables, as well as to record and manage errors in different modules.",
       "Through an intuitive web system, users will be able to easily access the necessary content and manage incidents with multimedia support.",
     ],
     technologies: ["Laravel", "Vue", "PHP", "MySql", "CSS"],
-    link: "#",
+    
   },
   {
     title: "Hotel san Andres Website",
+    imageUrl: "/images/HOTEL.png",
     description: [
       "In this project I developed a complete and functional website for a hotel, designed to improve its online presence and offer customers an intuitive and pleasant experience. The main objective was to present all the relevant information about the hotel and highlight the services it offers in an organized, attractive and accessible way from any device.",
     ],
@@ -42,7 +46,7 @@ export default function Projects() {
   return (
     <section id="projects" className="md:px-10 px-4 py-12 md:py-10 lg:py-10">
       <h2 className="text-3xl text-[#c4c8c7] font-bold tracking-tighter md:text-4xl mb-8">
-        Proyectos Destacados
+        Featured Projects
       </h2>
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
         {projects.map((project) => (
@@ -50,7 +54,8 @@ export default function Projects() {
             className="bg-[rgba(17,25,40,0.5)] border border-[#465866]"
             key={project.title}
           >
-            <CardTitle>{project.title}</CardTitle>
+            <CardTitle className="mb-4">{project.title}</CardTitle>
+            <img src={project.imageUrl}  className="w-full h-auto mb-4 rounded-xl" />
             <CardDescription className="text-sm text-gray-400 mb-5">
               {project.description.map((desc, i) => (
                 <span key={i} className="mb-2">
