@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Moon, Sun, Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import  logo  from "../../../public/Images/Logo1.png";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -26,7 +27,7 @@ export default function Header() {
           <a className="mr-6 flex items-center space-x-2" href="/">
             <Image
               alt=""
-              src="/public/Images/logo1.png"
+              src={logo}
               className="object-cover"
               height={40}
               width={40}
