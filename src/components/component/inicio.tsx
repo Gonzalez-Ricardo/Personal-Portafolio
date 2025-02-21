@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import Image from 'next/image'; 
+import Image from 'next/image';
+import me from "../../../public/Images/Ricardo.jpg";
 
 export function Inicio() {
   return (
@@ -12,7 +13,7 @@ export function Inicio() {
               <div className="w-61 h-61 rounded-full overflow-hidden shadow-lg animate-bounceIn">
                 <Image
                   alt=""
-                  src="/images/ricardo.jpg"
+                  src={me}
                   className="object-cover"
                   height={528} 
                   width={528}
