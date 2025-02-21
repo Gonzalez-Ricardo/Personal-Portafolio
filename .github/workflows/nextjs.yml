@@ -25,12 +25,12 @@ jobs:
         run: npm run build
 
       - name: List build output
-        run: ls -la .next/out
+        run: ls -la .next
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .next
+          path: .next/static
 
   deploy:
     runs-on: ubuntu-latest
