@@ -26,7 +26,7 @@ export default function Header() {
           <a className="mr-6 flex items-center space-x-2" href="/">
             <Image
               alt=""
-              src="/images/Logo1.png"
+              src="./images/Logo1.png"
               className="object-cover"
               height={40}
               width={40}
