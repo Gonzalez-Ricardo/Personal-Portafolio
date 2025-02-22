@@ -1,10 +1,15 @@
 import { Card, CardDescription, CardTitle } from "@/components/ui/card";
-import Image from 'next/image'; 
+import Image from 'next/image';
+import ofx from "../../../public/Images/ofx.png";
+import GIRO from "../../../public/Images/GIRO.png";
+import HOTEL from "../../../public/Images/HOTEL.png";
+import Ecommerce from "../../../public/Images/Ecommerce.png";
+
 
 const projects = [
   {
     title: "Electronics Ecommerce",
-    imageUrl: "/images/Ecommerce.png",
+    imageUrl: Ecommerce,
     description: [
       "Designed and developed a full-stack e-commerce platform, incorporating modular architecture, responsive design, and intuitive navigation for a seamless and engaging user experience.",
       "Implemented backend server, adept in CRUD operations with a focus on secure, scalable, and optimized database interactions.",
@@ -14,7 +19,7 @@ const projects = [
   },
   {
     title: "Investment Calculator",
-    imageUrl: "/images/ofx.png",
+    imageUrl: ofx,
     description: [
       "Developed and launched a financial tool for investment advisors, integrating key metrics such as Return on Investment (ROI), Net Present Value (NPV), Internal Rate of Return (IRR), and among others to maximize investment value.",
       "Designed and developed a task management application, incorporating modular architecture, responsive design and intuitive navigation for a fluid and engaging user experience.",
@@ -23,7 +28,7 @@ const projects = [
   },
   {
     title: "Error Management System And Download",
-    imageUrl: "/images/GIRO.png",
+    imageUrl: GIRO,
     description: [
       "This project aims to develop a centralized platform to improve the organization, visualization and maintenance of manuals and executables, as well as to record and manage errors in different modules.",
       "Through an intuitive web system, users will be able to easily access the necessary content and manage incidents with multimedia support.",
@@ -33,7 +38,7 @@ const projects = [
   },
   {
     title: "Hotel san Andres Website",
-    imageUrl: "/images/HOTEL.png",
+    imageUrl: HOTEL,
     description: [
       "In this project I developed a complete and functional website for a hotel, designed to improve its online presence and offer customers an intuitive and pleasant experience. The main objective was to present all the relevant information about the hotel and highlight the services it offers in an organized, attractive and accessible way from any device.",
     ],
@@ -55,7 +60,7 @@ export default function Projects() {
             key={project.title}
           >
             <CardTitle className="mb-4">{project.title}</CardTitle>
-            <img src={project.imageUrl}  className="w-full h-auto mb-4 rounded-xl" />
+            <Image alt="" src={project.imageUrl}  className="w-full h-auto mb-4 rounded-xl" />
             <CardDescription className="text-sm text-gray-400 mb-5">
               {project.description.map((desc, i) => (
                 <span key={i} className="mb-2">
@@ -64,7 +69,7 @@ export default function Projects() {
               ))}
             </CardDescription>
             <div className="flex flex-wrap gap-2 mb-5">
-              {project.technologies.map((tech) => (
+               {project.technologies.map((tech) => (
                 <span
                   key={tech}
                   className="bg-[#232323] text-secondary-foreground rounded-full px-2 py-1 text-xs"
