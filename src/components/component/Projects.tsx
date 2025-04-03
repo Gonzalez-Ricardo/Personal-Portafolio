@@ -4,7 +4,7 @@ import ofx from "../../../public/Images/ofx.png";
 import GIRO from "../../../public/Images/GIRO.png";
 import HOTEL from "../../../public/Images/HOTEL.png";
 import Ecommerce from "../../../public/Images/Ecommerce.png";
-
+import Monitoreo from "../../../public/Images/Monitoreo.png";
 
 const projects = [
   {
@@ -44,6 +44,15 @@ const projects = [
     ],
     technologies: ["React", "Tailwing", "JavaScript"],
     link: "https://www.hotel-san-andres.com",
+  },
+  {
+    title: "Monitoreo en Tiempo Real",
+    imageUrl: Monitoreo,
+    description: [
+      "This project is a real-time system monitoring application that allows you to visualize system resource usage, such as CPU, RAM, disk, and network traffic. It consists of a Node.js backend and a React frontend with Recharts, which communicate via WebSockets using Socket.io.",
+    ],
+    technologies: ["Next", "Tailwing", "JavaScript", "CSS"],
+    link: "https://monitoreo-de-servidores.vercel.app",
   },
 ];
 
