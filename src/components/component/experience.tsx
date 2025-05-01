@@ -3,8 +3,8 @@ import { Button } from "@/components/ui/button";
 const experiences = [
   {
     title: "Data Analyst",
-    company: "DOCA CAFE",
-    period: "Aug 2021 – Dec 2022",
+    company: "Doca Coffe",
+    period: "Aug. 2021 – Dec. 2022",
     location: "Morelia, Michoacán",
     description: [
       "- Applied advanced SQL techniques to optimize table structures for better data organization and faster query response times.",
@@ -20,7 +20,7 @@ const experiences = [
   {
     title: "Full Stack Developer",
     company: "GIRO",
-    period: "Aug 2022 – Dec 2022",
+    period: "Aug. 2022 – Dec. 2022",
     location: "Guadalajara, Jalisco",
     description: [
       "- Designed, developed, and deployed an internal tool, designed to document and track common internal software errors and solutions in real time, significantly boosting IT staff efficiency and knowledge sharing.",
@@ -31,8 +31,8 @@ const experiences = [
   },
   {
     title: "Systems Administrator",
-    company: "Hotel San Andres",
-    period: "Enero 2023 – Aug 2024",
+    company: "San Andres Hotel",
+    period: "Jan. 2023 – Mar. 2025",
     location: "Salvatierra, Gto",
     description: [
       "- Managed hotel devices and electronic accounts, including cameras, sensors and computers, as well as their proper maintenance.",
