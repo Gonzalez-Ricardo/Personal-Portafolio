@@ -62,7 +62,7 @@ export default function Header() {
                 className="transition-colors hover:text-foreground/80 text-foreground/60"
                 href="#projects"
               >
-                Proyectos
+                Projects
               </a>
             </div>
           </nav>

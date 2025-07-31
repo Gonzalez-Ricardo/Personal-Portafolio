@@ -5,6 +5,7 @@ import GIRO from "../../../public/Images/GIRO.png";
 import HOTEL from "../../../public/Images/HOTEL.png";
 import Ecommerce from "../../../public/Images/Ecommerce.png";
 import Monitoreo from "../../../public/Images/Monitoreo.png";
+import Soluciones from "../../../public/Images/Soluciones.png";
 
 const projects = [
   {
@@ -53,6 +54,15 @@ const projects = [
     ],
     technologies: ["Next", "Tailwing", "JavaScript", "CSS"],
     link: "https://monitoreo-de-servidores.vercel.app",
+  },
+  {
+    title: "Corporate Website – Soluciones Integrales S.A. de C.V.",
+    imageUrl: Soluciones,
+    description: [
+      "This website was developed for Soluciones Integrales S.A. de C.V., a Mexican company specializing in residential construction, custom furniture, and remodeling. The site conveys professionalism, clarity of services, and trust, effectively turning visitors into clients through a streamlined quote request form.",
+    ],
+    technologies: ["Next", "Tailwing CSS", "TypeScript", "Lucide Icons", "React", "Formspree"],
+    link: "https://terreno-a-tu-alcance.com",
   },
 ];
 
