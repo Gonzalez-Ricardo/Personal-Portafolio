@@ -34,7 +34,7 @@ export function Inicio() {
                 Information And Communication Technology Engineer
               </span>
               <div className="flex justify-start space-x-4 animate-fadeInUp py-2">
-                <Link href="https://github.com/ricardoGonzaM" target="_blank">
+                <Link href="https://github.com/Gonzalez-Ricardo" target="_blank">
                   <Button className="rounded-full" size="icon" variant="ghost">
                     <GithubIcon />
                   </Button>
