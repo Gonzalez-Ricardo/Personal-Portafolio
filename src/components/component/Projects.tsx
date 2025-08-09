@@ -2,7 +2,7 @@ import { Card, CardDescription, CardTitle } from "@/components/ui/card";
 import Image from 'next/image';
 import ofx from "../../../public/Images/ofx.png";
 import GIRO from "../../../public/Images/GIRO.png";
-import HOTEL from "../../../public/Images/HOTEL.png";
+import HOTEL from "../../../public/Images/hotel2.0.png";
 import Ecommerce from "../../../public/Images/Ecommerce.png";
 import Monitoreo from "../../../public/Images/Monitoreo.png";
 import Soluciones from "../../../public/Images/Soluciones.png";
@@ -52,7 +52,7 @@ const projects = [
     description: [
       "This project is a real-time system monitoring application that allows you to visualize system resource usage, such as CPU, RAM, disk, and network traffic. It consists of a Node.js backend and a React frontend with Recharts, which communicate via WebSockets using Socket.io.",
     ],
-    technologies: ["Next", "Tailwing", "JavaScript", "CSS"],
+    technologies: ["Next", "Tailwing", "JavaScript", "React"],
     link: "https://monitoreo-de-servidores.vercel.app",
   },
   {
