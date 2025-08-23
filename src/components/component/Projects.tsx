@@ -43,7 +43,7 @@ const projects = [
     description: [
       "In this project I developed a complete and functional website for a hotel, designed to improve its online presence and offer customers an intuitive and pleasant experience. The main objective was to present all the relevant information about the hotel and highlight the services it offers in an organized, attractive and accessible way from any device.",
     ],
-    technologies: ["React", "Tailwing", "JavaScript"],
+    technologies: ["Next","React", "Tailwing", "JavaScript"],
     link: "https://www.hotel-san-andres.com",
   },
   {
