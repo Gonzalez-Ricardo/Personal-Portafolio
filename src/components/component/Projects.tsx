@@ -6,6 +6,7 @@ import HOTEL from "../../../public/Images/hotel2.0.png";
 import Ecommerce from "../../../public/Images/Ecommerce.png";
 import Monitoreo from "../../../public/Images/Monitoreo.png";
 import Soluciones from "../../../public/Images/Soluciones.png";
+import Pentest from "../../../public/Images/Pentest.png";
 
 const projects = [
   {
@@ -65,6 +66,17 @@ const projects = [
     link: "https://terreno-a-tu-alcance.com",
   },
 ];
+const projectsCiberseguridad = [
+  {
+    title: "Cybersecurity Lab – Metasploitable 2 with Kali Linux",
+    imageUrl: Pentest,
+    description: [
+      "This project consisted of a controlled laboratory pentest, using Kali Linux as the attacker and Metasploitable 2 as the victim.Through a reconnaissance process using Nmap, the vulnerable vsFTPd 2.3.4 service was identified. The service's backdoor was then exploited using the Metasploit Framework, gaining remote access with root privileges on the victim machine.",
+    ],
+    technologies: ["Kali Linux", "Metasploitable 2", "Metasploit Framework", "Nmap"],
+    link: "/Document_Projects/pentest",
+  },
+];
 
 export default function Projects() {
   return (
@@ -72,14 +84,14 @@ export default function Projects() {
       <h2 className="text-3xl text-[#c4c8c7] font-bold tracking-tighter md:text-4xl mb-8">
         Featured Projects
       </h2>
-      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+      <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 mb-8">
         {projects.map((project) => (
           <Card
-            className="bg-[rgba(17,25,40,0.5)] border border-[#465866]"
+            className="bg-[rgba(17,25,40,0.5)] p-5 border border-[#465866]"
             key={project.title}
           >
-            <CardTitle className="mb-4">{project.title}</CardTitle>
-            <Image alt="" src={project.imageUrl}  className="w-full h-auto mb-4 rounded-xl" />
+            <CardTitle className="mb-3 py-3 gap-4 text-white">{project.title}</CardTitle>
+            <Image alt="" src={project.imageUrl}  className="w-auto h-auto object-cover mb-4 rounded-xl" />
             <CardDescription className="text-sm text-gray-400 mb-5">
               {project.description.map((desc, i) => (
                 <span key={i} className="mb-2">
@@ -91,7 +103,7 @@ export default function Projects() {
                {project.technologies.map((tech) => (
                 <span
                   key={tech}
-                  className="bg-[#232323] text-secondary-foreground rounded-full px-2 py-1 text-xs"
+                  className="bg-[#232323] text-white text-secondary-foreground rounded-full px-2 py-1 text-xs"
                 >
                   {tech}
                 </span>
@@ -107,6 +119,49 @@ export default function Projects() {
                   className="bg-[rgba(17,25,40,0.5)] border border-[#465866] text-white py-2 px-4 rounded"
                 >
                   View Project
+                </a>
+              </div>
+            )}
+          </Card>
+        ))}
+      </div>
+      <h2 className="text-3xl text-[#c4c8c7] font-bold tracking-tighter md:text-4xl mb-8">
+      Cybersecurity Projects
+      </h2>
+      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 mb-8">
+        {projectsCiberseguridad.map((project) => (
+          <Card
+            className="bg-[rgba(17,25,40,0.5)] p-5 border border-[#465866]"
+            key={project.title}
+          >
+            <CardTitle className="mb-8 text-white">{project.title}</CardTitle>
+            <Image alt="" src={project.imageUrl}  className="w-auto h-auto mb-4 rounded-xl" />
+            <CardDescription className="text-sm text-gray-400 mb-5">
+              {project.description.map((desc, i) => (
+                <span key={i} className="mb-2">
+                  {desc}
+                </span>
+              ))}
+            </CardDescription>
+            <div className="flex text-white flex-wrap gap-2 mb-6">
+               {project.technologies.map((tech) => (
+                <span
+                  key={tech}
+                  className="bg-[#232323] text-secondary-foreground rounded-full px-2 py-1 text-xs"
+                >
+                  {tech}
+                </span>
+              ))}
+            </div>
+            {project.link && (
+              <div className="flex items-center justify-center">
+                <a
+                  href={project.link}
+                  target=""
+                  aria-label={`View details for ${project.title}`}
+                  className="bg-[rgba(17,25,40,0.5)] border border-[#465866] text-white mb-2 py-2 px-4 rounded"
+                >
+                  View Report
                 </a>
               </div>
             )}

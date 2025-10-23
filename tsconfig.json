@@ -35,7 +35,7 @@
     "src/app/component.tsx",
     "src/app/page.jsx",
     "dist/types/**/*.ts"
-  ],
+, "src/app/Document_Projects/pentest/page.tsx"  ],
   "exclude": [
     "node_modules"
   ]
