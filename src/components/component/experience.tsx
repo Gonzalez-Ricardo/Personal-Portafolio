@@ -32,7 +32,7 @@ const experiences = [
   {
     title: "Systems Administrator",
     company: "San Andres Hotel",
-    period: "Jan. 2023 – Jul. 2025",
+    period: "Jan. 2023 – Present",
     location: "Salvatierra, Gto",
     description: [
       "- Managed hotel devices and electronic accounts, including cameras, sensors and computers, as well as their proper maintenance.",

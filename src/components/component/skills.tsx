@@ -68,6 +68,10 @@ export default function Skills() {
           <Code />
           <span>JavaScript</span>
         </div>
+        <div className="bg-[#0f1d29] rounded-lg p-4 flex flex-col items-center animate-bounceIn backdrop-blur-[10px] backdrop-saturate-[200%] bg-[rgba(17,25,40,0.5)] border border-[#465866]">
+          <Code />
+          <span>Next.js</span>
+        </div>
       </div>
     </section>
   );
