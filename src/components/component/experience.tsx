@@ -18,7 +18,7 @@ const experiences = [
     ],
   },
   {
-    title: "Full Stack Developer",
+    title: "Full Stack Developer Intern",
     company: "GIRO",
     period: "Aug. 2022 – Dec. 2022",
     location: "Guadalajara, Jalisco",
@@ -30,8 +30,8 @@ const experiences = [
     achievements: ["New support system for logging bugs"],
   },
   {
-    title: "Systems Administrator",
-    company: "San Andres Hotel",
+    title: "IT Consultant (Professional Services)",
+    company: "Hotel San Andrés",
     period: "Jan. 2023 – Present",
     location: "Salvatierra, Gto",
     description: [
@@ -42,6 +42,22 @@ const experiences = [
     achievements: [
       "Website for the Hotel",
       "Attendance management for staff by a time clock",
+    ],
+  },
+  {
+    title: "Software Developer (Professional Services)",
+    company: "Agro Comercial Guido",
+    period: "Jan. 2025 – Present",
+    location: "Salvatierra, Gto",
+    description: [
+      "- Development and maintenance of internal software solutions, considering information security principles.",
+      "- Requirements analysis and application design with access control and protection of operational data.",
+      "- Automation and technological improvements focused on efficiency, integrity, and availability of information.",
+    ],
+    achievements: [
+      "Internal inventory and sales management system",
+      "Process automation for operational reporting and data control",
+      "Secure client and supplier information management",
     ],
   },
 ];
@@ -62,9 +78,9 @@ export default function Experience() {
               {exp.company} | {exp.period}
             </span>
             <br />
-            <span  className="text-sm text-gray-500 mb-2">{exp.location}</span>
+            <span className="text-sm text-gray-500 mb-2">{exp.location}</span>
             <br />
-            <span  className="text-sm mb-4 text-[#92a0a3]">
+            <span className="text-sm mb-4 text-[#92a0a3]">
               {exp.description.map((desc, i) => (
                 <span key={i}>
                   {desc}

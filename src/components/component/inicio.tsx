@@ -1,11 +1,14 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import Image from 'next/image';
+import Image from "next/image";
 import me from "../../../public/Images/Ricardo.png";
 
 export function Inicio() {
   return (
-    <div id="inicio" className="text-[#c4c8c7] font-sans md:px-10 px-4 py-12 md:py-10 lg:py-10">
+    <div
+      id="inicio"
+      className="text-[#c4c8c7] font-sans md:px-10 px-4 py-12 md:py-10 lg:py-10"
+    >
       <main>
         <div className="pt-19 px-4 md:px-8 flex flex-col space-y-6 md:flex-row items-center animate-fadeIn">
           <div className="md:w-1/2 space-y-6 md:mr-8">
@@ -15,7 +18,7 @@ export function Inicio() {
                   alt=""
                   src={me}
                   className="object-cover"
-                  height={528} 
+                  height={528}
                   width={528}
                   style={{
                     aspectRatio: "150/150",
@@ -34,12 +37,18 @@ export function Inicio() {
                 Information And Communication Technology Engineer
               </span>
               <div className="flex justify-start space-x-4 animate-fadeInUp py-2">
-                <Link href="https://github.com/Gonzalez-Ricardo" target="_blank">
+                <Link
+                  href="https://github.com/Gonzalez-Ricardo"
+                  target="_blank"
+                >
                   <Button className="rounded-full" size="icon" variant="ghost">
                     <GithubIcon />
                   </Button>
                 </Link>
-                <Link href="https://www.linkedin.com/in/ricardo-gonzalez-mendez-2056b7262/" target="_blank">
+                <Link
+                  href="https://www.linkedin.com/in/ricardo-gonzalez-mendez-2056b7262/"
+                  target="_blank"
+                >
                   <Button className="rounded-full" size="icon" variant="ghost">
                     <LinkedinIcon />
                   </Button>
@@ -47,20 +56,20 @@ export function Inicio() {
               </div>
             </div>
             <span className="animate-fadeInUp text-[#92a0a3]">
-              Hello There!, My name is Ricardo Gonzalez, I am an TICS engineer
-              specialized in the design, implementation and management of
-              technological solutions aimed at optimizing business processes and
-              improving digital connectivity. My experience covers areas such as
-              software development, cybersecurity, and data analysis, combining
-              advanced technical knowledge with strategic skills to solve
-              problems.
+              Hello There!, My name is Ricardo Gonzalez is an Information and
+              Communication Technologies Engineer with a strong specialization
+              in secure software development, cybersecurity, and systems
+              administration. He focuses on designing and implementing robust,
+              scalable, and secure technological solutions that optimize
+              business processes and strengthen digital operations.
               <br />
               <br />
-              With a comprehensive focus on innovation, I integrate modern
-              tools, agile methodologies and international standards to offer
-              efficient and scalable results. My commitment is to drive digital
-              transformation in organizations, guaranteeing secure, sustainable
-              technological solutions aligned with business objectives.
+              With experience in full-stack development, information security,
+              and process automation, he applies agile methodologies and
+              international best practices to deliver high-quality, efficient,
+              and resilient systems. His professional goal is to support
+              organizations in their digital transformation through reliable,
+              secure, and strategically aligned technology.
             </span>
           </div>
         </div>
