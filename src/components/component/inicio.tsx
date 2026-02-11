@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
-import me from "../../../public/Images/Ricardo.png";
+import me from "../../../public/Images/Ricardo2.png";
 
 export function Inicio() {
   return (
@@ -56,20 +56,19 @@ export function Inicio() {
               </div>
             </div>
             <span className="animate-fadeInUp text-[#92a0a3]">
-              Hello There!, My name is Ricardo Gonzalez is an Information and
-              Communication Technologies Engineer with a strong specialization
-              in secure software development, cybersecurity, and systems
-              administration. He focuses on designing and implementing robust,
-              scalable, and secure technological solutions that optimize
-              business processes and strengthen digital operations.
+              Hello There!, my name is Ricardo Gonzalez, an Information and
+              Communication Technologies Engineer specialized in full-stack
+              development. I design and build secure, scalable web applications
+              and internal systems that optimize business processes and protect
+              critical information.
               <br />
               <br />
-              With experience in full-stack development, information security,
-              and process automation, he applies agile methodologies and
-              international best practices to deliver high-quality, efficient,
-              and resilient systems. His professional goal is to support
-              organizations in their digital transformation through reliable,
-              secure, and strategically aligned technology.
+              My experience includes software development, access control
+              implementation, and process automation in real operational
+              environments. I apply secure coding practices, agile
+              methodologies, and industry standards to deliver reliable and
+              maintainable systems. My goal is to help organizations grow
+              through secure and efficient digital solutions.
             </span>
           </div>
         </div>

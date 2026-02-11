@@ -1,5 +1,5 @@
 import { Card, CardDescription, CardTitle } from "@/components/ui/card";
-import Image from 'next/image';
+import Image from "next/image";
 import ofx from "../../../public/Images/ofx.png";
 import GIRO from "../../../public/Images/GIRO.png";
 import HOTEL from "../../../public/Images/hotel2.0.png";
@@ -7,6 +7,9 @@ import Ecommerce from "../../../public/Images/Ecommerce.png";
 import Monitoreo from "../../../public/Images/Monitoreo.png";
 import Soluciones from "../../../public/Images/Soluciones.png";
 import Pentest from "../../../public/Images/Pentest.png";
+import ILT from "../../../public/Images/ILT.png";
+
+
 
 const projects = [
   {
@@ -36,7 +39,6 @@ const projects = [
       "Through an intuitive web system, users will be able to easily access the necessary content and manage incidents with multimedia support.",
     ],
     technologies: ["Laravel", "Vue", "PHP", "MySql", "CSS"],
-    
   },
   {
     title: "Hotel san Andres Website",
@@ -44,7 +46,7 @@ const projects = [
     description: [
       "In this project I developed a complete and functional website for a hotel, designed to improve its online presence and offer customers an intuitive and pleasant experience. The main objective was to present all the relevant information about the hotel and highlight the services it offers in an organized, attractive and accessible way from any device.",
     ],
-    technologies: ["Next","React", "Tailwing", "JavaScript"],
+    technologies: ["Next", "React", "Tailwing", "JavaScript"],
     link: "https://www.hotel-san-andres.com",
   },
   {
@@ -62,8 +64,32 @@ const projects = [
     description: [
       "This website was developed for Soluciones Integrales S.A. de C.V., a Mexican company specializing in residential construction, custom furniture, and remodeling. The site conveys professionalism, clarity of services, and trust, effectively turning visitors into clients through a streamlined quote request form.",
     ],
-    technologies: ["Next", "Tailwing CSS", "TypeScript", "Lucide Icons", "React", "Formspree"],
+    technologies: [
+      "Next",
+      "Tailwing CSS",
+      "TypeScript",
+      "Lucide Icons",
+      "React",
+      "Formspree",
+    ],
     link: "https://terreno-a-tu-alcance.com",
+  },
+  {
+    title: "Corporate Website – ILT|Importación Lógistica y Translado PM",
+    imageUrl: ILT,
+    description: [
+      "Corporate website developed for a Mexican infrastructure and logistics company, focused on presenting services for government and municipal sectors, designed and implemented a modern, responsive interface optimized for conversion and professional branding, integrated a quotation request system to streamline client contact and lead generation.",
+      "Applied performance optimization and SEO best practices for better visibility and fast loading times.",
+    ],
+    technologies: [
+      "Next.js",
+      "Tailwind CSS",
+      "TypeScript",
+      "React",
+      "Lucide Icons",
+      "Formspree",
+    ],
+    link: "https://www.ilt.mx",
   },
 ];
 const projectsCiberseguridad = [
@@ -73,7 +99,12 @@ const projectsCiberseguridad = [
     description: [
       "This project consisted of a controlled laboratory pentest, using Kali Linux as the attacker and Metasploitable 2 as the victim.Through a reconnaissance process using Nmap, the vulnerable vsFTPd 2.3.4 service was identified. The service's backdoor was then exploited using the Metasploit Framework, gaining remote access with root privileges on the victim machine.",
     ],
-    technologies: ["Kali Linux", "Metasploitable 2", "Metasploit Framework", "Nmap"],
+    technologies: [
+      "Kali Linux",
+      "Metasploitable 2",
+      "Metasploit Framework",
+      "Nmap",
+    ],
     link: "/Document_Projects/pentest",
   },
 ];
@@ -90,8 +121,14 @@ export default function Projects() {
             className="bg-[rgba(17,25,40,0.5)] p-5 border border-[#465866]"
             key={project.title}
           >
-            <CardTitle className="mb-3 py-3 gap-4 text-white">{project.title}</CardTitle>
-            <Image alt="" src={project.imageUrl}  className="w-auto h-auto object-cover mb-4 rounded-xl" />
+            <CardTitle className="mb-3 py-3 gap-4 text-white">
+              {project.title}
+            </CardTitle>
+            <Image
+              alt=""
+              src={project.imageUrl}
+              className="w-auto h-auto object-cover mb-4 rounded-xl"
+            />
             <CardDescription className="text-sm text-gray-400 mb-5">
               {project.description.map((desc, i) => (
                 <span key={i} className="mb-2">
@@ -100,7 +137,7 @@ export default function Projects() {
               ))}
             </CardDescription>
             <div className="flex flex-wrap gap-2 mb-5">
-               {project.technologies.map((tech) => (
+              {project.technologies.map((tech) => (
                 <span
                   key={tech}
                   className="bg-[#232323] text-white text-secondary-foreground rounded-full px-2 py-1 text-xs"
@@ -126,7 +163,7 @@ export default function Projects() {
         ))}
       </div>
       <h2 className="text-3xl text-[#c4c8c7] font-bold tracking-tighter md:text-4xl mb-8">
-      Cybersecurity Projects
+        Cybersecurity Projects
       </h2>
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 mb-8">
         {projectsCiberseguridad.map((project) => (
@@ -135,7 +172,11 @@ export default function Projects() {
             key={project.title}
           >
             <CardTitle className="mb-8 text-white">{project.title}</CardTitle>
-            <Image alt="" src={project.imageUrl}  className="w-auto h-auto mb-4 rounded-xl" />
+            <Image
+              alt=""
+              src={project.imageUrl}
+              className="w-auto h-auto mb-4 rounded-xl"
+            />
             <CardDescription className="text-sm text-gray-400 mb-5">
               {project.description.map((desc, i) => (
                 <span key={i} className="mb-2">
@@ -144,7 +185,7 @@ export default function Projects() {
               ))}
             </CardDescription>
             <div className="flex text-white flex-wrap gap-2 mb-6">
-               {project.technologies.map((tech) => (
+              {project.technologies.map((tech) => (
                 <span
                   key={tech}
                   className="bg-[#232323] text-secondary-foreground rounded-full px-2 py-1 text-xs"
